@@ -42,7 +42,7 @@ jobs:
           build-args: |
             REF=main
           push: true
-          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu${{ inputs.image_postfix }}
+          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-test
       # Push CI images still need to be re-built daily
       -
         name: Build and push (for Push CI) in a daily basis
@@ -55,7 +55,7 @@ jobs:
           build-args: |
             REF=main
           push: true
-          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-push-ci
+          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-test
 #
 #  nightly-torch-deepspeed-docker:
 #    name: "Nightly PyTorch + DeepSpeed"
