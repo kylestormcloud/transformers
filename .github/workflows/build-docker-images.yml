@@ -72,7 +72,7 @@ jobs:
           build-args: |
             REF=main
           push: true
-          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-test
+          tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-push-ci-test
 
   nightly-torch-deepspeed-docker:
     name: "Nightly PyTorch + DeepSpeed"
