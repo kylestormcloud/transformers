@@ -45,7 +45,8 @@ jobs:
           tags: huggingface/transformers-pytorch-deepspeed-latest-gpu-test
 
   latest-torch-deepspeed-docker-for-push-ci-daily-build:
-    name: "Latest PyTorch + DeepSpeed"
+    name: "Latest PyTorch + DeepSpeed (Push CI)"
+    needs: latest-torch-deepspeed-docker
     runs-on: ubuntu-latest
     steps:
       -
